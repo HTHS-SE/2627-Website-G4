@@ -1,0 +1,19 @@
+nav > div {
+    padding: 20px 45px 0 !important;
+}
+.nav-link {
+    font-family: var(--special);
+    color: #B6AFC7;
+}
+
+.nav-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: rgba(162, 136, 166, 0.70);
+}
+
+.nav-icon img {
+    /* looks off otherwise */
+    transform: translateX(5px); 
+}
