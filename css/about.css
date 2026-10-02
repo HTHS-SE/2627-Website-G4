@@ -1,0 +1,13 @@
+.banner {
+    background: linear-gradient(340deg, #211E24 -16%, #4A4058 130%);
+    border-radius: 18px;
+    top:60px;
+}
+
+.about h1, h2, p {
+    color: #BB9BB0;
+}
+
+.body {
+    background: linear-gradient(160deg, #1C1D21 10%, #A288A6 145%);
+}
