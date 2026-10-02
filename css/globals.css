@@ -9,6 +9,9 @@
 body {
     font-family: var(--body);
     background: linear-gradient(160deg, #1C1D21 10%, #A288A6 145%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
