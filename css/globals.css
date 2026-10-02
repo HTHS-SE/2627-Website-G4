@@ -9,3 +9,11 @@
 body {
     font-family: var(--body);
 }
+
+h1 {
+    font-family: var(--head);
+}
+
+.special {
+    font-family: var(--special);
+}
