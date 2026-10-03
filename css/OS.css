@@ -40,12 +40,14 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 32px;
     width: 100%;
     max-width: 1355px;
     min-height: 676px;
     padding: 24px 32px;
     border-radius: 18px;
     background: linear-gradient(141deg, #211E24 14.91%, #4A4058 103.05%);
+    box-sizing: border-box;
 }
 
 .top-container img {
@@ -54,12 +56,20 @@ main {
     object-fit: contain;
 }
 
+.overview-container img {
+    max-width: 50%;
+    max-height: 600px;
+    object-fit: contain;
+}
+
 .top-container h1,
 .top-container h2 {
+    /* left margin between title and side of container */
     margin: 0px 0px 0px 40px;
 }
 
 h1 {
+    font-family: var(--head);
     color: rgba(241, 227, 228, 0.70);
     font-size: 48px;
     font-style: normal;
@@ -68,6 +78,7 @@ h1 {
 }
 
 h2 {
+    font-family: var(--head);
     color: #BB9BB0;
     font-size: 64px;
     font-style: normal;
@@ -76,23 +87,56 @@ h2 {
 }
 
 h3 {
+    font-family: var(--head);
     color: #BB9BB0;
     font-size: 72px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     line-height: normal;
     box-sizing: border-box;
     text-align: left;
 }
 
-.overview-container p {
+p {
+    font-family: var(--body);
     color: #F1E3E4;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.overview-container p {
     width: 100%;
     max-width: 554px;
     box-sizing: border-box;
     text-align: left;
-    font-size: 22px;
-    line-height: 1.5;
-    letter-spacing: normal;
-    word-spacing: normal;
+}
+
+/* Responsive font-size adjustments */
+.overview-container h3 {
+    font-size: clamp(2rem, 5.3vw, 4.5rem);
+}
+
+.overview-container p {
+    font-size: clamp(1rem, 1.7vw, 1.375rem);
+}
+
+/* Switch the container to vertical layout on smaller screens */
+@media (max-width: 768px) {
+    .overview-container {
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 0;
+        padding: 24px;
+    }
+
+    .overview-container img {
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+        align-self: center;
+    }
 }
