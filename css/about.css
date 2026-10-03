@@ -1,9 +1,12 @@
 .banner {
     background: linear-gradient(340deg, #211E24 -16%, #4A4058 130%);
-    border-radius: 18px;
     top:120px;
     width: 70%;
     height: 130px;
+}
+
+.round-corner {
+    border-radius: 18px !important;
 }
 
 .about h1, h2, p {
@@ -20,6 +23,10 @@
 
 .background {
     background: linear-gradient(160deg, #1C1D21 10%, #A288A6 145%);
+}
+
+.about-cards {
+    margin: 0px 20px;
 }
 
 #top-underline {
