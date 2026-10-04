@@ -27,6 +27,11 @@
 
 .about-cards {
     margin: 0px 20px;
+    top: 200px;
+}
+
+.about-cards .card {
+    max-width: 500px;
 }
 
 #top-underline {
