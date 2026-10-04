@@ -53,6 +53,12 @@
     border: 1px solid rgba(105, 88, 108, 0.70);
 }
 
+.contributions {
+    font-size: 22px;
+    margin: 0px 25px 20px;
+    color: #F1E3E4;
+}
+
 /*IDs*/
 
 #top-underline {
