@@ -11,16 +11,31 @@
     border-radius: 18px !important;
 }
 
+.about-img {
+    border: 2px solid #3A215C;
+    width: 60%;
+}
+
 .about h1, h2, p {
     color: #BB9BB0;
 }
 
-.about h1 {
+.about h1, h2 {
     font-family: var(--head);
-    font-size: 65px;
     text-transform: uppercase;
+}
+
+.about h1 {
+    font-size: 65px;
     margin-top: 15px;
     margin-bottom: 0px;
+
+}
+
+.about h2 {
+    font-weight: lighter;
+    font-size: 42px;
+    margin-top: 12px;
 }
 
 .background {
@@ -34,6 +49,8 @@
 
 .about-cards .card {
     max-width: 500px;
+    background: linear-gradient(210deg, rgba(70, 55, 65, 0.70) 2%, rgba(105, 88, 108, 0.70) 96%);
+    border: 1px solid rgba(105, 88, 108, 0.70);
 }
 
 /*IDs*/
