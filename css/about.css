@@ -1,3 +1,5 @@
+/*Classes*/
+
 .banner {
     background: linear-gradient(340deg, #211E24 -16%, #4A4058 130%);
     top:120px;
@@ -33,6 +35,8 @@
 .about-cards .card {
     max-width: 500px;
 }
+
+/*IDs*/
 
 #top-underline {
     width: 250px;
