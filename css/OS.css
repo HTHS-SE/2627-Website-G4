@@ -101,7 +101,6 @@ main {
 
 .top-container h1,
 .top-container h2 {
-    /* left margin between title and side of container */
     margin: 0px 0px 0px 40px;
 }
 
@@ -152,7 +151,6 @@ p {
     text-align: left;
 }
 
-/* Responsive font-size adjustments */
 .overview-container h3, .info-container h3 {
     font-size: clamp(3rem, 5.3vw, 4.5rem);
 }
@@ -161,7 +159,6 @@ p {
     font-size: clamp(1.25rem, 1.7vw, 1.375rem);
 }
 
-/* Switch the container to vertical layout on smaller screens */
 @media (max-width: 768px) {
     .overview-container {
         flex-direction: column;
