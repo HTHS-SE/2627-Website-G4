@@ -87,6 +87,37 @@
     color: #F1E3E480;
 }
 
+.footer {
+    background-color: white;
+    height: 100px;
+    background: linear-gradient(350deg, #4A3844 -35%, #B285A3 275%);
+    box-shadow: 15px 5px 5px 12px rgba(0, 0, 0, 0.10);
+}
+
+.footer p {
+    font-family: var(--body);
+    font-size: 24px;
+    color: #F1E3E4;
+    position: relative;
+    bottom: 10px;
+}
+
+.icon {
+    background-color: rgba(162, 136, 166, 0.7);
+    width: 58px;
+    height: 58px;
+    border-radius: 50px;
+    bottom: 75px;
+    right: 30px;
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 3px;
+}
+
 /*IDs*/
 
 #top-underline {
