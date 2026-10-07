@@ -326,18 +326,7 @@ blockquote cite {
     border-radius: 0;
   }
   .landing-content {
-    padding-inline: 1rem;
-  }
-  .hero-panel {
-    min-height: 620px;
-  }
-  .hero-image {
-    width: 100%;
-    opacity: 0.35;
-  }
-  .hero {
-    width: 100%;
-    padding: 13rem 1.5rem 2rem;
+    padding-inline: 1.25rem;
   }
   .architecture-card {
     min-height: auto;
@@ -347,12 +336,38 @@ blockquote cite {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .hero-panel {
-    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
   }
   .hero {
-    padding-top: 11rem;
+    width: 100%;
+    padding: clamp(3rem, 10vw, 5rem) clamp(1.5rem, 6vw, 3rem) 2rem;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    letter-spacing: -0.03em;
+  }
+  .hero-image {
+    position: relative;
+    inset: auto;
+    order: 2;
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    opacity: 0.88;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding-inline: 1.5rem;
+  }
+  blockquote {
+    font-size: 0.85rem;
   }
   .architecture-card {
     padding: 1.5rem;
