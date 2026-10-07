@@ -76,15 +76,17 @@ main {
 }
 
 .img-container {
+    gap: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     min-width: 0;
     min-height: 769px;
     padding: 24px 32px;
     border-radius: 18px;
     background: linear-gradient(145deg, #211E24 72.47%, #4A4058 177.84%);
     box-sizing: border-box;
+    flex-direction: column;
 }
 
 .top-container img {
@@ -159,12 +161,12 @@ p {
     font-size: clamp(1.25rem, 1.7vw, 1.375rem);
 }
 
-#macbook-img {
+.img-center-round {
     margin: 120px 0px 0px 0px;
     border-radius: 18px;
 }
 
-#macOS-architecture-img {
+.img-round {
     border-radius: 18px;
 }
 
