@@ -96,10 +96,10 @@
 
 .footer p {
     font-family: var(--body);
-    font-size: 24px;
+    font-size: 22px;
     color: #F1E3E4;
     position: relative;
-    bottom: 10px;
+    top: 32px;
 }
 
 .icon {
@@ -107,8 +107,7 @@
     width: 58px;
     height: 58px;
     border-radius: 50px;
-    bottom: 75px;
-    right: 30px;
+    bottom: 20px;
 }
 
 .icon-img {
