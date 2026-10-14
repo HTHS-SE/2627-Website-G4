@@ -90,7 +90,7 @@
 }
 
 .landing-content {
-  max-width: 1350px;
+  max-width: 1480px;
   margin-inline: auto;
   padding-bottom: 5rem;
 }
@@ -271,30 +271,118 @@ blockquote cite {
 }
 
 .os-card {
+  --tint: var(--color-accent);
   display: block;
   height: 150px;
   overflow: hidden;
   position: relative;
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-panel);
+  isolation: isolate;
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 420ms ease;
 }
 
-.os-card img {
+.os-card--windows {
+  --tint: #1e5bd6;
+}
+.os-card--macos {
+  --tint: #c2566a;
+}
+.os-card--ubuntu {
+  --tint: #8e2e6e;
+}
+.os-card--android {
+  --tint: #2f8f87;
+}
+.os-card--ios {
+  --tint: #2e3566;
+}
+
+.os-card-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 620ms ease;
 }
 
-.os-card span {
+.os-card::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    150deg,
+    color-mix(in srgb, var(--tint) 55%, transparent) 0%,
+    color-mix(in srgb, var(--tint) 34%, transparent) 55%,
+    color-mix(in srgb, var(--color-bg-dark) 68%, transparent) 100%
+  );
+  opacity: 0;
+  transition: opacity 420ms ease;
+}
+
+.os-card:hover,
+.os-card:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+.os-card:hover .os-card-bg,
+.os-card:focus-visible .os-card-bg {
+  filter: blur(7px) saturate(1.25);
+  transform: scale(1.12);
+}
+
+.os-card:hover::before,
+.os-card:focus-visible::before {
+  opacity: 1;
+}
+
+.os-card-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
   color: #fff;
   font-family: var(--body);
   font-size: 0.85rem;
   font-weight: 700;
-  left: 50%;
-  position: absolute;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
-  top: 50%;
   transform: translate(-50%, -50%);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.os-card-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.55);
+  transition: opacity 380ms ease 80ms,
+    transform 480ms cubic-bezier(0.22, 1, 0.36, 1) 80ms;
+}
+
+.os-card-icon img {
+  width: 46px;
+  height: 46px;
+  color: white;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.45));
+}
+
+.os-card:hover .os-card-label,
+.os-card:focus-visible .os-card-label {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.85);
+}
+
+.os-card:hover .os-card-icon,
+.os-card:focus-visible .os-card-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 @media (max-width: 992px) {
