@@ -44,6 +44,7 @@ h1 {
     height: 58px;
     border-radius: 50px;
     bottom: 20px;
+    left: 25px;
 }
 
 .icon-img {
@@ -56,10 +57,19 @@ h1 {
 .up-arrow {
     bottom: 18px;
     width: 40px;
+    right: 40px;
     transform: scale(1);
     transition: transform 75ms ease-in;
 }
 
 .up-arrow:hover {
     transform: scale(1.1);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 760px) {
+    .footer p {
+        font-size: 20px;
+    }
 }
