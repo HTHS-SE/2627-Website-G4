@@ -20,13 +20,67 @@
     <link rel="stylesheet" href="css/globals.css">
 </head>
 <body class="background">
+    <nav class="navbar navbar-expand-lg site-nav">
+      <div class="container-fluid px-0">
+        <a
+          class="brand d-flex align-items-center gap-3 text-decoration-none"
+          href="#top"
+        >
+          <span
+            class="nav-icon d-flex align-items-center justify-content-center"
+          >
+            <img src="img/navicon.png" alt="" />
+          </span>
+          <span class="brand-name text-white"
+            ><strong>Operating</strong><br />Systems</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#foundations">Foundations</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#directory"
+                role="button"
+                data-bs-toggle="dropdown"
+                >OS</a
+              >
+              <ul class="dropdown-menu os-dropdown">
+                <li><a class="dropdown-item" href="windows.html">Windows</a></li>
+                <li><a class="dropdown-item" href="macOS.html">MacOS</a></li>
+                <li><a class="dropdown-item" href="linux.html">Linux</a></li>
+                <li><a class="dropdown-item" href="android.html">Android</a></li>
+                <li><a class="dropdown-item" href="iOS.html">iOS</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container-fluid navbar-container min-vh-100">
 
         <!--About Us-->
         <section class="about">
             <!--Banner-->
             <div class="container">
-                <div class="position-absolute start-50 translate-middle d-block banner round-corner">
+                <div class="position-relative start-50 translate-middle d-block banner round-corner">
                     <h1 class="text-center">About Us</h1>
                     <div class="position-absolute translate-middle start-50" id="top-underline"></div>
                     <div class="position-absolute translate-middle start-50" id="bottom-underline"></div>
@@ -118,5 +172,6 @@
             <p><strong>Copyright &copy; 2026 SRT Group</strong></p>
             <a href="#"><img class="up-arrow position-relative float-end" src="img/up-arrow.png" alt="Up Arrow"></a>
     </footer>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
