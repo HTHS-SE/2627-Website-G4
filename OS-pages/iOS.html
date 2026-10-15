@@ -84,20 +84,15 @@
         <div class="overview-container">
             <div class="title">
                 <h3>Overview & History</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum faucibus dolor ex, vel scelerisque erat condimentum nec. 
-                    Vivamus ac tortor porttitor, egestas nulla non, congue diam. 
-                    Fusce eleifend quis arcu quis sodales. Cras sollicitudin, 
-                    dui non lobortis consequat, felis elit vehicula velit, nec pellentesque 
-                    mauris augue ut ex. Aenean ac consectetur arcu. Sed aliquet erat ut accumsan 
-                    vehicula. Aenean tristique est lorem, eu ornare velit condimentum et. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus
-                    dolor ex, vel scelerisque erat condimentum nec. Vivamus ac tortor porttitor,
-                    egestas nulla non, congue diam. Fusce eleifend quis arcu quis sodales.
-                    Cras sollicitudin, dui non lobortis consequat, felis elit vehicula velit, 
-                    nec pellentesque mauris augue ut ex. Aenean ac consectetur arcu. 
-                    Sed aliquet erat ut accumsan vehicula. Aenean tristique est lorem, eu ornare 
-                    velit condimentum et. </p>
+                <p>In 2007, Apple released the first touch-screen smartphone, and with it, the first version of iOS 
+                  (named as such for being the operating system for Apple’s line of ‘i’ mobile devices), 
+                  not very different from their MacOS.</p>
+                <ul>
+                  <li><p>This first version of iOS allowed for integrated use of the device’s camera, browser (safari), media player, and text message system.</p></li>
+                  <li><p>iOS wasn’t given its name until its second version, which was the first version that allowed developers to program their own applications.</p></li>
+                  <li><p>In subsequent years, Apple added many key functionalities to iOS, building on the core architecture. For example, iOS 4 brought FaceTime, and iOS 5 brought Siri, iMessage, and the notification system.</p></li>
+                  <li><p>In 2019, iPadOS, built on the same system as iOS but more specialized for larger iPad screens, was released</p></li>
+                </ul>
             </div>
             <img class="img-fluid" src="/img/OS-img/iOS-evolution.png" alt="iOS Evolution">
         </div>
@@ -107,29 +102,28 @@
             </div>
             <div class="info-container title">
                 <h3>Architecture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum faucibus dolor ex, vel scelerisque erat condimentum nec. 
-                    Vivamus ac tortor porttitor, egestas nulla non, congue diam. 
-                    Fusce eleifend quis arcu quis sodales. Cras sollicitudin, 
-                    dui non lobortis consequat, felis elit vehicula velit, nec pellentesque 
-                    mauris augue ut ex. Aenean ac consectetur arcu. Sed aliquet erat ut accumsan 
-                    vehicula. Aenean tristique est lorem, eu ornare velit condimentum et. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus
-                    dolor ex, vel scelerisque erat condimentum nec. Vivamus ac tortor porttitor,
-                    egestas nulla non, congue diam. Fusce eleifend quis arcu quis sodales.
-                    Cras sollicitudin, dui non lobortis consequat, felis elit vehicula velit, 
-                    nec pellentesque mauris augue ut ex. Aenean ac consectetur arcu. 
-                    Sed aliquet erat ut accumsan vehicula. Aenean tristique est lorem, eu ornare 
-                    velit condimentum et.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum faucibus dolor ex, vel scelerisque erat condimentum nec. 
-                    Vivamus ac tortor porttitor, egestas nulla non, congue diam. 
-                    Fusce eleifend quis arcu quis sodales. Cras sollicitudin, 
-                    dui non lobortis consequat, felis elit vehicula velit, nec pellentesque 
-                    mauris augue ut ex. Aenean ac consectetur arcu. Sed aliquet erat ut accumsan 
-                    vehicula. Aenean tristique est lorem, eu ornare velit condimentum et. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus
-                    dolor ex, vel scelerisque erat condimentum nec. Vivamus ac tortor porttitor,
-                    egestas nulla non, congue diam. Fusce eleifend quis arcu quis sodales.</p>
+                <p>iOS uses a layer based architecture, reaching from the hardware to the elements the user interacts with.</p>
+                <ul>
+                  <li><p>The Core OS Layer communicates directly with the hardware, as well as implementing several low level systems</p></li>
+                  <li><ul>
+                    <li><p>The Core Bluetooth Framework, Security Services Framework that protects data, and the Accelerate Framework to perform calculations</p></li>
+                  </ul></li>
+                  <li><p>The Core Services Layer is built on top of the Core OS Layer, integrating system services used across applications.</p></li>
+                  <li><ul>
+                    <li><p><strong>Data:</strong> CloudKit Framework allows data sync with iCloud, Core Foundations framework implements basic data management, Core Data Framework mediates data with Model-View-Controller app set-ups</p></li>
+                    <li><p><strong>Services:</strong> Core Location Framework provides location services, and HealthKit Framework provides the user’s health data</p></li>
+                  </ul></li>
+                  <li><p>The Media Layer controls all graphical functionalities in the OS</p></li>
+                  <li><ul>
+                    <li><p><strong>Rendering:</strong> Core Graphics Framework provides support for simple vector and image rendering, Core Animation integrates visual animations and effects to run efficiency</p></li>
+                    <li><p><strong>Playback:</strong> Media Player Framework allows playback of media, especially iTunes, and AV Kit gives the user intuitive controls for video playback</p></li>
+                  </ul></li>
+                  <li><p>The final, Cocoa Touch layer mediates high-level UI frameworks</p></li>
+                  <li><ul>
+                    <li><p>UIKit framework serves as a basis for creating UIs that take user input</p></li>
+                    <li><p>EventKit Framework connects applications to calendar data, GameKit Framework integrates Apple’s Game Center into apps, and MapKit Framework provides support for embedded interactive maps</p></li>
+                  </ul></li>
+                </ul>
             </div>
         </div>
     </main>
