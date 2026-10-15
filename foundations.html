@@ -22,12 +22,12 @@
       <div class="container-fluid px-0">
         <a
           class="brand d-flex align-items-center gap-3 text-decoration-none"
-          href="index.html"
+          href="#top"
         >
           <span
             class="nav-icon d-flex align-items-center justify-content-center"
           >
-            <img src="img/navicon.png" alt="" />
+            <img src="/img/navicon.png" alt="" />
           </span>
           <span class="brand-name text-white"
             ><strong>Operating</strong><br />Systems</span
@@ -44,31 +44,29 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-5">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="foundations.html"
-                >Foundations</a
-              >
+              <a class="nav-link active" href="#foundations">Foundations</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="index.html#directory"
+                href="#directory"
                 role="button"
                 data-bs-toggle="dropdown"
                 >OS</a
               >
               <ul class="dropdown-menu os-dropdown">
-                <li><a class="dropdown-item" href="windows.html">Windows</a></li>
-                <li><a class="dropdown-item" href="macOS.html">MacOS</a></li>
-                <li><a class="dropdown-item" href="linux.html">Linux</a></li>
-                <li><a class="dropdown-item" href="android.html">Android</a></li>
-                <li><a class="dropdown-item" href="iOS.html">iOS</a></li>
+                <li><a class="dropdown-item" href="/OS-pages/windows.html">Windows</a></li>
+                <li><a class="dropdown-item" href="/OS-pages/macOS.html">MacOS</a></li>
+                <li><a class="dropdown-item" href="/OS-pages/linux.html">Linux</a></li>
+                <li><a class="dropdown-item" href="/OS-pages/android.html">Android</a></li>
+                <li><a class="dropdown-item" href="/OS-pages/iOS.html">iOS</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
           </ul>
         </div>
@@ -158,7 +156,13 @@
         </div>
       </section>
     </main>
-
+    <footer class="footer text-center position-absolute w-100">
+            <div class="icon position-absolute mx-auto">
+                <img class="icon-img mx-auto position-relative" src="/img/navicon.png" alt="OS Icon">
+            </div>
+            <p><strong>Copyright &copy; 2026 SRT Group</strong></p>
+            <a href="#"><img class="up-arrow position-relative float-end" src="/img/up-arrow.png" alt="Up Arrow"></a>
+    </footer>
     <script src="js/foundations.js"></script>
     <script src="js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
