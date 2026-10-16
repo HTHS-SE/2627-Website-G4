@@ -1,3 +1,15 @@
+/*Elements*/
+article img {
+  border-radius: 20px;
+  width: 450px;;
+}
+
+/*Classes*/
+
+.col p, ul {
+  min-width: 400px;
+}
+
 .foundations-content {
   width: min(1324px, calc(100% - 7.2rem));
   margin: 5.3rem auto 4rem;
