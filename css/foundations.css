@@ -11,6 +11,9 @@ article img {
 }
 
 .foundations-content {
+  /* need to keep the content small on big screens
+  but still have room on smaller ones so we use a min value
+  and then calculate a font size responsively via a percentage value */
   width: min(1324px, calc(100% - 7.2rem));
   margin: 5.3rem auto 4rem;
 }

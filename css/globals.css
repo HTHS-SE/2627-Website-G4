@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* save commonly used values as variables */
 :root {
     --head: "Roboto", system-ui, "Segoe UI", Arial, sans-serif;
     --body: "Quicksand", system-ui, "Segoe UI", Arial, sans-serif;
@@ -59,6 +60,9 @@ ul li {
   transition: margin 260ms ease, padding 260ms ease, top 260ms ease,
     border-color 260ms ease, border-radius 260ms ease, box-shadow 260ms ease;
 }
+
+/* here we use ::before to make a separate glass layer,
+so we can have something akin to a glassmorphism affect */
 .site-nav::before {
   position: absolute;
   z-index: -1;
@@ -73,6 +77,7 @@ ul li {
   transition: opacity 260ms ease;
 }
 .site-nav.is-scrolled {
+  /* on page scroll make the navbar smaller and wider*/
   top: 1.2rem;
   margin-inline: 2vw;
   padding-top: 15px;

@@ -187,6 +187,9 @@ blockquote cite {
   position: relative;
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-panel);
+  /* we were running into issues with stacking context
+  so we used this to make each z-index inside the card relative
+  to the os card */
   isolation: isolate;
   transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 420ms ease;
@@ -221,6 +224,10 @@ blockquote cite {
   content: "";
   inset: 0;
   z-index: 1;
+  /* because we are using color variables
+  we cannot directly add opacity to the color, hence
+  we use color mix to mix it with the transparent color
+  and make each color slightly transparent in our gradient */
   background: linear-gradient(
     150deg,
     color-mix(in srgb, var(--tint) 55%, transparent) 0%,

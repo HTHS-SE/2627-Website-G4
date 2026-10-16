@@ -71,6 +71,8 @@
 
 /*Dropdown Background Card*/
 .background-card {
+    /* this way the card starts slightly hidden
+    and moves down when its container is opened. */
     transform: translate(0,-90%);
     transition: transform 0.4s ease-in;
 
