@@ -8,12 +8,16 @@
       name="description"
       content="Explore the foundational layers of an operating system."
     />
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/foundations.css" />
   </head>
@@ -27,7 +31,7 @@
           <span
             class="nav-icon d-flex align-items-center justify-content-center"
           >
-            <img src="/img/navicon.png" alt="" />
+            <img src="img/navicon.png" alt="" />
           </span>
           <span class="brand-name text-white"
             ><strong>Operating</strong><br />Systems</span
@@ -44,7 +48,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-5">
             <li class="nav-item">
-              <a class="nav-link" href="/index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#foundations">Foundations</a>
@@ -58,15 +62,15 @@
                 >OS</a
               >
               <ul class="dropdown-menu os-dropdown">
-                <li><a class="dropdown-item" href="/OS-pages/windows.html">Windows</a></li>
-                <li><a class="dropdown-item" href="/OS-pages/macOS.html">MacOS</a></li>
-                <li><a class="dropdown-item" href="/OS-pages/linux.html">Linux</a></li>
-                <li><a class="dropdown-item" href="/OS-pages/android.html">Android</a></li>
-                <li><a class="dropdown-item" href="/OS-pages/iOS.html">iOS</a></li>
+                <li><a class="dropdown-item" href="os/windows.html">Windows</a></li>
+                <li><a class="dropdown-item" href="os/macOS.html">MacOS</a></li>
+                <li><a class="dropdown-item" href="os/linux.html">Linux</a></li>
+                <li><a class="dropdown-item" href="os/android.html">Android</a></li>
+                <li><a class="dropdown-item" href="os/iOS.html">iOS</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
         </div>
@@ -89,7 +93,7 @@
             <article class="layer-slide is-active">
               <p>
                 Kernel forms an essential part of the operating system that acts as a direct interface between
-                the software applications and the computer’s hardware. It performs the function of allocating 
+                the software applications and the computer’s hardware. It performs the function of allocating
                 important computer resources such as CPU scheduling, memory management, and controlling hardware devices.
               </p>
               <ul>
@@ -103,8 +107,8 @@
             <article class="layer-slide">
               <p>
                 The device layer employs software applications called device drivers that serve
-                as intermediaries between the OS and peripheral hardware devices. They act as interpreters 
-                and hence allow abstraction of the hardware by making it possible for the OS and other applications to 
+                as intermediaries between the OS and peripheral hardware devices. They act as interpreters
+                and hence allow abstraction of the hardware by making it possible for the OS and other applications to
                 communicate with hardware without having to understand its inner workings.
               </p>
               <ul>
@@ -117,8 +121,8 @@
             </article>
             <article class="layer-slide">
               <p>
-                User Layer refers to the space in which all the normal applications and graphical interfaces exist. 
-                The whole layer runs on user mode, and the layer has restrictions when it comes to privileges. 
+                User Layer refers to the space in which all the normal applications and graphical interfaces exist.
+                The whole layer runs on user mode, and the layer has restrictions when it comes to privileges.
                 This is because the user layer ensures that the user software cannot crash the computer system.
               </p>
               <ul>
@@ -150,10 +154,10 @@
     </main>
     <footer class="footer text-center position-absolute w-100">
             <div class="icon position-absolute mx-auto">
-                <img class="icon-img mx-auto position-relative" src="/img/navicon.png" alt="OS Icon">
+                <img class="icon-img mx-auto position-relative" src="img/navicon.png" alt="OS Icon">
             </div>
             <p><strong>Copyright &copy; 2026 SRT Group</strong></p>
-            <a href="#"><img class="up-arrow position-relative float-end" src="/img/up-arrow.png" alt="Up Arrow"></a>
+            <a href="#"><img class="up-arrow position-relative float-end" src="img/up-arrow.png" alt="Up Arrow"></a>
     </footer>
     <script src="js/foundations.js"></script>
     <script src="js/navbar.js"></script>
