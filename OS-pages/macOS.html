@@ -84,20 +84,16 @@
         <div class="overview-container">
             <div class="title">
                 <h3>Overview & History</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum faucibus dolor ex, vel scelerisque erat condimentum nec. 
-                    Vivamus ac tortor porttitor, egestas nulla non, congue diam. 
-                    Fusce eleifend quis arcu quis sodales. Cras sollicitudin, 
-                    dui non lobortis consequat, felis elit vehicula velit, nec pellentesque 
-                    mauris augue ut ex. Aenean ac consectetur arcu. Sed aliquet erat ut accumsan 
-                    vehicula. Aenean tristique est lorem, eu ornare velit condimentum et. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus
-                    dolor ex, vel scelerisque erat condimentum nec. Vivamus ac tortor porttitor,
-                    egestas nulla non, congue diam. Fusce eleifend quis arcu quis sodales.
-                    Cras sollicitudin, dui non lobortis consequat, felis elit vehicula velit, 
-                    nec pellentesque mauris augue ut ex. Aenean ac consectetur arcu. 
-                    Sed aliquet erat ut accumsan vehicula. Aenean tristique est lorem, eu ornare 
-                    velit condimentum et. </p>
+                <p>MacOS was first introduced in 1984 for their new Macintosh PCs, with its defining property being its integration of graphical user interfaces (they would later inspire Microsoft’s Windows OS).</p>
+                <ul>
+                  <li><p>Most PCs at the time were operating by typing commands and directories, with no intuitive visuals.
+                  <ul>
+                    <li><p>MacOS innovated by creating a mouse that moves across the screen to select visual virtual files in the ‘Finder’.</p></li>
+                  </ul>
+                  <li><p>In the 80s, Apple allowed Microsoft to use elements of MacOS during early development of Windows</p></li>
+                  <li><p>MacOS followed with new features that are stable today, including file sharing over the internet and having multiple accounts on one device.</p></li>
+                  <li><p>In 2001, Apple redeveloped MacOS into the more modern MacOS X, running on a Unix kernel, introducing features like memory protection, a more appealing UI, and the dock bar.</p></li>
+                </ul>
             </div>
             <img class="img-fluid img-center-round" src="/img/OS-img/macOS-device.png" alt="MacOS Macbook">
         </div>
@@ -107,29 +103,22 @@
             </div>
             <div class="info-container title">
                 <h3>Architecture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum faucibus dolor ex, vel scelerisque erat condimentum nec. 
-                    Vivamus ac tortor porttitor, egestas nulla non, congue diam. 
-                    Fusce eleifend quis arcu quis sodales. Cras sollicitudin, 
-                    dui non lobortis consequat, felis elit vehicula velit, nec pellentesque 
-                    mauris augue ut ex. Aenean ac consectetur arcu. Sed aliquet erat ut accumsan 
-                    vehicula. Aenean tristique est lorem, eu ornare velit condimentum et. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus
-                    dolor ex, vel scelerisque erat condimentum nec. Vivamus ac tortor porttitor,
-                    egestas nulla non, congue diam. Fusce eleifend quis arcu quis sodales.
-                    Cras sollicitudin, dui non lobortis consequat, felis elit vehicula velit, 
-                    nec pellentesque mauris augue ut ex. Aenean ac consectetur arcu. 
-                    Sed aliquet erat ut accumsan vehicula. Aenean tristique est lorem, eu ornare 
-                    velit condimentum et.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vestibulum faucibus dolor ex, vel scelerisque erat condimentum nec. 
-                    Vivamus ac tortor porttitor, egestas nulla non, congue diam. 
-                    Fusce eleifend quis arcu quis sodales. Cras sollicitudin, 
-                    dui non lobortis consequat, felis elit vehicula velit, nec pellentesque 
-                    mauris augue ut ex. Aenean ac consectetur arcu. Sed aliquet erat ut accumsan 
-                    vehicula. Aenean tristique est lorem, eu ornare velit condimentum et. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus
-                    dolor ex, vel scelerisque erat condimentum nec. Vivamus ac tortor porttitor,
-                    egestas nulla non, congue diam. Fusce eleifend quis arcu quis sodales.</p>
+                <p>The architecture of MacOS is based on Unix, integrating smoothly with Apple devices and especially native Apple applications.</p>
+                <ul>
+                  <li><p>It uses a layered system with different frameworks running on a powerful kernel, the <strong>XNU Kernel</strong> (a hybrid, Unix-derived kernel, 
+                    incorporating features of the Mach microkernel and FreeBSD). The frameworks and systems running on this kernel consist of:</p></li>
+                    <ul>
+                      <li><p>Cocoa and Carbon frameworks that enable GUI creation and rendering</p></li>
+                      <li><p>The metal framework that communicates with the GPU on a low-level for graphics processes</p></li>
+                      <li><p>Window Server that controls different windows, inputs, and high-level graphics management</p></li>
+                      <li><p>General security mechanisms for encryption and privacy</p></li>
+                    </ul>
+                    <li><p>At higher layers, additional frameworks for user interaction are implemented:</p></li>
+                    <ul>
+                      <li><p><strong>Media Frameworks</strong> like the Metal graphics API, Core Audio, and OpenCL</p></li>
+                      <li><p><strong>Cocoa Application Layer</strong> that provides direct support for AppKit (old app UI system), SwiftUI (new app UI system), and Swift runtime environments for App development</p></li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </main>
