@@ -23,7 +23,9 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/globals.css">
 </head>
+<!--Assigns background color-->
 <body class="background">
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg site-nav">
       <div class="container-fluid px-0">
         <a
@@ -78,106 +80,120 @@
         </div>
       </div>
     </nav>
+
+    <!--Core Content Container-->
     <div class="container-fluid navbar-container min-vh-100">
 
         <!--About Us-->
         <section class="about">
             <!--Banner-->
             <div class="container">
+                <!--Centered banner with heading-->
                 <div class="position-relative start-50 translate-middle d-block banner round-corner">
                     <h1 class="text-center">About Us</h1>
+
+                    <!--Text Underlines-->
                     <div class="position-absolute translate-middle start-50" id="top-underline"></div>
                     <div class="position-absolute translate-middle start-50" id="bottom-underline"></div>
                 </div>
             </div>
 
             <!--Cards-->
-            <div class="row row-cols-1 row-cols-lg-3 g-5 about-cards mx-auto">
+            <div class="row row-cols-1 row-cols-lg-3 g-5 about-cards mx-auto"> <!--1 col on small screen, 3 cols on large screens-->
+
+                <!--Sebastian-->
                 <div class="col">
-                        <div class="card mx-auto">
-                            <div class="card-child round-corner mx-auto">
-                                <h2 class="text-center">Sebastian Postigo</h2>
-                                <img src="img/about/sebastian.jpg" alt="Sebastian Postigo" class="about-img position-relative start-50 translate-middle-x round-corner">
-                                <div class="card-body">
-                                    <p class="contributions">
-                                        <strong>Contributions:</strong><br>
-                                        Designed site with team, programmed 'About Page' layout, designed and implemented page footer,
-                                        researched and wrote sections on MacOS and iOS.
-                                    </p>
-                                </div>
+                    <div class="card mx-auto">
+                        <div class="card-child round-corner mx-auto"> <!--Sub-card div containing image, heading, and contributions-->
+                            <h2 class="text-center">Sebastian Postigo</h2>
+                            <img src="img/about/sebastian.jpg" alt="Sebastian Postigo" class="about-img position-relative start-50 translate-middle-x round-corner">
+                            <div class="card-body">
+                                <p class="contributions">
+                                    <strong>Contributions:</strong><br>
+                                    Designed site with team, programmed 'About Page' layout, designed and implemented page footer,
+                                    researched and wrote sections on MacOS and iOS.
+                                </p>
                             </div>
-                            <div class="card-child round-corner mx-auto background-card position-relative">
-                                <div class="card-body">
-                                    <p class="background-info">
-                                        <strong>Background:</strong><br>
-                                        Has been programming for 8 years, beginning with simple HTML,
-                                        then moving into game development with Python and C#, as well as
-                                        robotics programming with C++.
-                                    </p>
-                                </div>
+                        </div>
+
+                        <!--Sub-card drop-down under the main sub-card-->
+                        <div class="card-child round-corner mx-auto background-card position-relative">
+                            <div class="card-body">
+                                <p class="background-info">
+                                    <strong>Background:</strong><br>
+                                    Has been programming for 8 years, beginning with simple HTML,
+                                    then moving into game development with Python and C#, as well as
+                                    robotics programming with C++.
+                                </p>
                             </div>
                         </div>
                     </div>
-                <div class="col">
-                    <div class="card mx-auto">
-                            <div class="card-child round-corner mx-auto">
-                                <h2 class="text-center">Tudor Barcan</h2>
-                                <img src="img/about/tudor.jpg" alt="Tudor Barcan" class="about-img position-relative start-50 translate-middle-x round-corner">
-                                <div class="card-body">
-                                    <p class="contributions">
-                                        <strong>Contributions:</strong><br>
-                                        He coded the page design for the operating system pages and
-                                        wrote page content for the windows page, landing page,
-                                        and foundations page, as well as other minor contributions to the website.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-child round-corner mx-auto background-card position-relative">
-                                <div class="card-body">
-                                    <p class="background-info">
-                                        <strong>Background:</strong><br>
-                                        Tudor is a student at high tech and has been coding for a few years in languages like C#, python, and java,
-                                        but just learned css and html over the summer. He isn't too interested in web development, but
-                                        enjoys coding programs, and has made several small game projects.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                 </div>
+                    
+                <!--Tudor-->
                 <div class="col">
                     <div class="card mx-auto">
-                            <div class="card-child round-corner mx-auto">
-                                <h2 class="text-center">Rehan Ali</h2>
-                                <img src="img/about/rehan.jpg" alt="Rehan Ali" class="about-img position-relative start-50 translate-middle-x round-corner">
-                                <div class="card-body">
-                                    <p class="contributions">
-                                        <strong>Contributions:</strong><br>
-                                        Designed landing and foundations page layout. Implemented both designs. Implemented foundations carousel
-                                        and interactive navbar with basic Javascript. Wrote content for the Linux and Android detail pages.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-child round-corner mx-auto background-card position-relative">
-                                <div class="card-body">
-                                    <p class="background-info">
-                                        <strong>Background:</strong><br>
-                                        Rehan is a passionate software developer hoping to study large-scale enterprise systems engineering
-                                        in the future. He loves anime and has been programming for nine years. Likes UI and UX design as a hobby.
-                                    </p>
-                                </div>
+                        <div class="card-child round-corner mx-auto">
+                            <h2 class="text-center">Tudor Barcan</h2>
+                            <img src="img/about/tudor.jpg" alt="Tudor Barcan" class="about-img position-relative start-50 translate-middle-x round-corner">
+                            <div class="card-body">
+                                <p class="contributions">
+                                    <strong>Contributions:</strong><br>
+                                    He coded the page design for the operating system pages and
+                                    wrote page content for the windows page, landing page,
+                                    and foundations page, as well as other minor contributions to the website.
+                                </p>
                             </div>
                         </div>
+                        <div class="card-child round-corner mx-auto background-card position-relative">
+                            <div class="card-body">
+                                <p class="background-info">
+                                    <strong>Background:</strong><br>
+                                    Tudor is a student at high tech and has been coding for a few years in languages like C#, python, and java,
+                                    but just learned css and html over the summer. He isn't too interested in web development, but
+                                    enjoys coding programs, and has made several small game projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Rehan-->
+                <div class="col">
+                    <div class="card mx-auto">
+                        <div class="card-child round-corner mx-auto">
+                            <h2 class="text-center">Rehan Ali</h2>
+                            <img src="img/about/rehan.jpg" alt="Rehan Ali" class="about-img position-relative start-50 translate-middle-x round-corner">
+                            <div class="card-body">
+                                <p class="contributions">
+                                    <strong>Contributions:</strong><br>
+                                    Designed landing and foundations page layout. Implemented both designs. Implemented foundations carousel
+                                    and interactive navbar with basic Javascript. Wrote content for the Linux and Android detail pages.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-child round-corner mx-auto background-card position-relative">
+                            <div class="card-body">
+                                <p class="background-info">
+                                    <strong>Background:</strong><br>
+                                    Rehan is a passionate software developer hoping to study large-scale enterprise systems engineering
+                                    in the future. He loves anime and has been programming for nine years. Likes UI and UX design as a hobby.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <footer class="footer text-center position-absolute w-100">
-            <div class="icon position-absolute mx-auto">
-                <img class="icon-img mx-auto position-relative" src="img/navicon.png" alt="OS Icon">
+    <!--Footer-->
+    <footer class="footer text-center position-absolute w-100"> <!--Takes up full screen width-->
+            <div class="icon position-absolute mx-auto"> <!--Circle around logo-->
+                <img class="icon-img mx-auto position-relative" src="img/navicon.png" alt="OS Icon"> <!--Logo image-->
             </div>
             <p><strong>Copyright &copy; 2026 SRT Group</strong></p>
-            <a href="#"><img class="up-arrow position-relative float-end" src="img/up-arrow.png" alt="Up Arrow"></a>
+            <a href="#"><img class="up-arrow position-relative float-end" src="img/up-arrow.png" alt="Up Arrow"></a> <!--'Return to Top' Up-Arrow-->
     </footer>
     <script src="js/navbar.js"></script>
 </body>

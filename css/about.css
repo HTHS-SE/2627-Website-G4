@@ -25,12 +25,14 @@
     text-transform: uppercase;
 }
 
+/*Page Heading*/
 .about h1 {
     font-size: 65px;
     margin-top: 15px;
     margin-bottom: 0px;
 }
 
+/*Card Headings*/
 .about h2 {
     font-weight: lighter;
     font-size: 42px;
@@ -47,6 +49,7 @@
     margin-bottom: 50px;
 }
 
+/*Transparent parent card*/
 .about-cards .card {
     max-width: 500px;
     background-color: rgba(0,0,0,0);
@@ -66,16 +69,18 @@
     color: #F1E3E4;
 }
 
+/*Dropdown Background Card*/
 .background-card {
     transform: translate(0,-90%);
     transition: transform 0.4s ease-in;
 
     width: 92%;
     padding-bottom: 15px;
-    z-index: 0 !important;
+    z-index: 0 !important; /*Below top sub-card*/
     background: linear-gradient(210deg, rgba(70, 55, 65, 0.7) 2%, rgba(105, 88, 108, 0.7) 96%) !important;
 }
 
+/*Dropdown animation*/
 .card:hover .background-card, .card:active .background-card {
     transform: translate(0,-12%);
 }
@@ -103,6 +108,8 @@
 }
 
 /*Media Queries*/
+
+/*Reduces card heading font size when the screen is relatively between mobile size and desktop size*/
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .about h2 {
         font-size: 28px;
